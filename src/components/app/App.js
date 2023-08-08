@@ -1,8 +1,14 @@
+import Header from '../Header/Header';
+import Promo from '../Promo/Promo';
+
 const App = () => {
     return (
-        <main>
-            <h1>Here we go!</h1>
-        </main>
+        <>
+            <Header/>
+            <main>
+                <Promo/>
+            </main>
+        </>
     )
 }
 
