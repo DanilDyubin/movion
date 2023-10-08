@@ -1,0 +1,44 @@
+.header-movies-list {
+    position: absolute;
+    top: calc(100% + 5px);
+    z-index: 10;
+    width: 350px;
+    border-radius: 10px;
+
+    &__item {
+        display: flex;
+        padding: 5px;
+        height: 80px;
+        margin-bottom: 2px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, .3);
+        background-color: rgba(0,0,0,.6);
+        backdrop-filter: blur(10px);
+        color: var(--color-white);
+    }
+
+    &__img {
+        overflow: hidden;
+        height: 70px;
+        margin-right: 20px;
+        img {
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__descr {
+        padding-top: 20px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__genre {
+        font-weight: 400;
+        font-size: 14px;
+        color: #807E81;
+    }
+}

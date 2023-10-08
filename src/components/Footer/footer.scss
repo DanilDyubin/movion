@@ -1,0 +1,104 @@
+.footer {
+    background-color: #14161a;
+
+    &__divider {
+        height: 3px;
+        background-color: #252525;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px;
+    }
+
+    &__left {
+        display: flex;
+        gap: 150px;
+    }
+
+    &__title {
+        color: var(--color-white);
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+
+        &-item {
+            margin-bottom: 8px;
+        }
+
+        &-link {
+            font-size: 16px;
+            font-weight: 300;
+            color: #9b9c9d;
+            &--underlined {
+                font-weight: 500;
+                color: var(--color-white);
+                text-decoration: underline;
+            }
+            &--icon {
+                color: var(--color-primary);
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    &__social {
+        margin-bottom: 25px;
+
+        &-list {
+            display: flex;
+            &--item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                background-color: #252525;
+                // background-color: #21222C;
+                border-radius: 100%;
+                &:not(last-child) {
+                    margin-right: 15px;
+                }
+            }
+            &--link {
+                color: var(--color-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-icon {
+            color: var(--color-white);
+            font-size: 20px;
+        }
+    }
+
+    &__apps {
+
+        &-list {
+            display: flex;
+            gap: 15px;
+        }
+
+        &-link {
+            svg {
+                width: 120px;
+            }
+        }
+
+    }
+}
+
+.footer__apps-img {
+    width: 120px;
+}

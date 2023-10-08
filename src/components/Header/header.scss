@@ -16,20 +16,36 @@
     }
 
     &__menu {
-        margin-right: 65px;
+        margin-right: 50px;
     }
 
-    &__btn {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: 98px;
-        height: 42px;
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        border-radius: 4px;
+    &__login {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      border: 2px solid var(--color-primary);
+      cursor: pointer;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
     }
+
+    // &__btn {
+    //     position: absolute;
+    //     top: 50%;
+    //     right: 15px;
+    //     transform: translateY(-50%);
+    //     width: 98px;
+    //     height: 42px;
+    //     background-color: var(--color-primary);
+    //     color: var(--color-white);
+    //     border-radius: 4px;
+    // }
 }
 
 .menu {
@@ -44,6 +60,7 @@
           margin-right: 24px;
         }
         &:hover {
+          transition: all 0.3s ease-in-out;
           background-color: var(--color-white);
             .fa-solid {  
               color: var(--color-black);
@@ -74,64 +91,99 @@
     }
 }
 
-.search-form {
-    position: relative;
-    margin-right: 50px;
-    width: 37px;
-    height: 37px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    transition: 0.5s all;
-    overflow: hidden;
+// .account {
+//   position: absolute;
+//   top: -25px;
+//   right: 15px;
+//   width: 260px;
+//   padding: 25px;
+//   background: #15161C;
+//   box-shadow: 0px 4px 45px 0px rgba(2, 6, 13, 0.42);
+//   border-radius: 8px;
+//   z-index: 15;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: all 0.1s ease-out;
 
-    &__btn-search {
-      min-width: 18px;
-      height: 18px;
-      margin-right: 10px;
-      border: none;
-      background-color: transparent;
-      fill: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+//   &__btn-close {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     border: none;
+//     background-color: transparent;
+//     width: 20px;
+//     height: 20px;
+//     &--icon {
+//       color: var(--color-white);
+//       width: 100%;
+//       height: 100%;
+//     }
+//   }
 
-    &__input {
-      height: 20px;
-      width: 100px;
-      border: none;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 30px;
-      color: white;
-      background-color: transparent;
-      outline: none;
-      &::placeholder {
-        color: rgba(255, 255, 255, 0.5);
-      }
-    }
+//   &__header {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-    &__btn-close {
-      width: 13px;
-      height: 13px;
-      border: none;
-      background-color: transparent;
-      fill: white;
-      transform: scale(0);
-      transform: rotate(90deg);
-      transition: 0.9s;
-    }
+//   &__avatar {
+//     border-radius: 100%;
+//     width: 48px;
+//     height: 48px;
+//     border-radius: 100%;
+//     border: 2px solid var(--color-primary);
+//     overflow: hidden;
+//     margin-bottom: 15px;
+//     img {
+//       width: 100%;
+//     }
+//   }
 
-    &__active {
-        width: 320px;
-        .search-form__btn-close {
-            transform: scale(1);
-        }
-    }
-}
+//   &__email {
+//     color: #807E81;
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 20px;
+//     margin-bottom: 25px;
+//   }
+// }
 
+// .account-menu {
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   &__divider {
+//     height: 1px;
+//     background-color: #21222C;
+//     // background-color: #fff;
+//   }
   
+//   &__list-item {
+//     padding: 15px 0;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   &__icon {
+//     margin-right: 15px;
+//     color: var(--color-white);
+//   }
+
+//   &__link {
+//     color: var(--color-white);
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 20px;
+//   }
+// }
+
+// .account.active {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
+
+
