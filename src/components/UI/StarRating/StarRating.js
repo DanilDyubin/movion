@@ -16,7 +16,7 @@ const StarRating = ({style = {}, totalStars = 10}) => {
     }
 
     const Star = ({selected = false, onSelect}) => (  // onSelect = f => f
-        <FaStar fontSize="36px" color={selected ? 'var(--color-primary)' : 'grey'} onClick={onSelect} className="star-svg"/>
+        <FaStar style={{cursor: 'pointer'}} fontSize="36px" color={selected ? 'var(--color-primary)' : 'grey'} onClick={onSelect} className="star-svg"/>
     );
 
     const createArray = length => [...Array(length)];
@@ -26,7 +26,7 @@ const StarRating = ({style = {}, totalStars = 10}) => {
     return (
         <div style={{color: '#9b9c9d', ...style}}>
         {createArray(totalStars).map((item, i) => (
-            <Star 
+            <Star
                 key={i} 
                 selected={selectedStars > i}
                 // onSelect={() => setSelectedStars(i + 1)}
